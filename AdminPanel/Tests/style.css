@@ -1,0 +1,29 @@
+.login{
+	height:250px;
+	width:250px;
+	background-color:#5DCEC6;
+	margin:0 auto;
+}
+.login-forma{
+		width:100px;
+		margin:0 auto;
+}
+.login-forma-name{
+	position:inherit;
+	padding-top:20px;
+		display:flex;
+	flex-direction: column;
+}
+.login-forma-password{
+	margin-top:20px;
+		display:flex;
+	flex-direction: column;
+}
+a{
+	margin:0 auto;
+}
+.login input[type=submit]{
+	margin:0 auto;
+	margin-top:20px;
+	
+}
