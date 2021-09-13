@@ -13,7 +13,7 @@ if(!isset($_COOKIE['user'])):
 
 <div class="form">
 <div class='login'>
-<div class="promo"><h5>Тестирование кадров</h5></div>
+<div class="promo"><h5>Тестирование не кадров</h5></div>
 <form action="check.php" method="POST">
 	<div class='login-forma'>
 		<div class='login-forma-name'>
