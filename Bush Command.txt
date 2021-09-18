@@ -12,3 +12,4 @@ git branch
 
         git push -u origin master
         git pull origin master --allow-unrelated-histories
+        git push origin --delete <branchName>
