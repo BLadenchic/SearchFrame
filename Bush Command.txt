@@ -11,3 +11,4 @@ git branch
         -a От англ. all - все. С этим ключом будут выведены и локальные, и удаленные ветки
 
         git push -u origin master
+        git pull origin master --allow-unrelated-histories
