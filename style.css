@@ -74,3 +74,12 @@ body{
 		margin-left:125px;
 	margin-top:20px;
 }
+.login-forma-button
+{
+	width:100%;
+	display:inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	    font-size: 14px;
+		margin-top: 10px;
+}
