@@ -10,6 +10,7 @@ git branch
         -r От англ. remote – удаленный. С этим ключом будут выведены только удаленные ветки. О них мы поговорим в следующем уроке. 
         -a От англ. all - все. С этим ключом будут выведены и локальные, и удаленные ветки
 
-        git push -u origin master
-        git pull origin master --allow-unrelated-histories
-        git push origin --delete <branchName>
+        git push -u origin master отправить ветку на сервер
+        git pull origin master --allow-unrelated-histories получить ветку с сервера
+        git push origin --delete <branchName> Удалить ветку на сервере
+        git reset --hard HEAD^ отменить коммит
