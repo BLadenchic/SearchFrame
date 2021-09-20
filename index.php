@@ -24,7 +24,7 @@ header("Location:./Profil");?>
 					<a href="Reset">Забыл пароль</a>
 					</div>
 				</div>
-				<div class="login-promo-submit">
+				<div class="login-promo-submit"> 
 					<input type='submit' value='Войти' class="but"></input>
 				</div>
 				<div class="login-forma-button">
