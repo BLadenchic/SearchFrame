@@ -3,36 +3,46 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./style.css">
 <?php if(isset($_COOKIE['user']))
-header("Location:./Profil");?>
+header("Location:./Profil");
+?>
 <title>Тестирование кадров</title>
 </head>
 <body>
 <div class="form">
-	<div class='login'>
-		<div class="promo"><h5>Тестирование кадров</h5></div>
-			<form action="check.php" method="POST" class="login-promo-forma">
-				<div class='login-forma'>
-					<div class='login-forma-name'>
-						<a>Логин: </a>
-						<input type='text' name='login' id='name'></input>
-					</div>
-					<div class='login-forma-password'>
-						<a>Пароль: </a>
-						<input type='password' name='password' id='password'></input>
-					</div>
-					<div  class="login-forma-reset">
-					<a href="Reset">Забыл пароль</a>
-					</div>
+		<form action="check.php" method="POST" class="reg-forma">
+			<div class='reg-forma-block'>
+				<div class="promo">
+					<h5>Регистрация</h5>
+				</div>
+				<div>
+					<a>Логин: </a>
+					<input type='text' name='login' id='name'></input>
+				</div>
+				<div>
+					<a>ФИО: </a>
+					<input type='text' name='FIO' id='FIO'></input>
+				</div>
+				<div>
+					<a>Номер телефона: </a>
+					<input type='telephon' name='telephon' id='telephon'></input>
+				</div>
+				<div>
+					<a>Почта: </a>
+					<input type='mail' name='mail' id='mail'></input>
+				</div>
+				<div>
+					<a>Пароль: </a>
+					<input type='password' name='password' id='password'></input>
+				</div>
+				<div>
+					<a>Повторите пароль: </a>
+					<input type='password' name='password' id='password'></input>
 				</div>
 				<div class="login-promo-submit"> 
-					<input type='submit' value='Войти' class="but"></input>
+					<input type='submit' value='Зарегистрироватся' class="but"></input>
 				</div>
-				<div class="login-forma-button">
-					<a href="registration">Зарегистрироватся</a>
-				</div>
-			</form>
-		</div>
-	</div>
+			</div>
+		</form>
 </div>
 </body>
 </html>

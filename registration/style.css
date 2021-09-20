@@ -1,0 +1,52 @@
+input
+{
+	border-radius: 5px;
+	border-color: #ccc;
+}
+body{
+	background-color: #3E3E3E;
+}
+input[type=submit]
+{
+	background-color: #32883B;
+	font-size: 13px;
+    color:#fff;
+	margin: 0 auto;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.error
+{
+	border-color: red;
+}
+.promo{
+	text-align: center;
+	font-family: "Ubuntu", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.5384616;
+    color: #333333;
+}
+.promo h5{
+	margin: 0 auto;
+}
+.form{
+	margin:0 auto;
+	height: 100%;
+	width: 200px;
+	display: flex;
+    align-items: center;
+	
+}
+.reg-forma-block div{
+	padding-top:20px;
+		display:flex;
+	flex-direction: column;
+}
+.reg-forma{
+	background: rgba(255, 239, 213,0.6);
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 5px;
+}
