@@ -10,7 +10,7 @@ header("Location:./Profil");?>
 <div class="form">
 	<div class='login'>
 		<div class="promo"><h5>Тестирование кадров</h5></div>
-			<form action="check.php" method="POST">
+			<form action="check.php" method="POST" class="login-promo-forma">
 				<div class='login-forma'>
 					<div class='login-forma-name'>
 						<a>Логин: </a>
@@ -20,13 +20,15 @@ header("Location:./Profil");?>
 						<a>Пароль: </a>
 						<input type='password' name='password' id='password'></input>
 					</div>
+					<div  class="login-forma-reset">
+					<a href="Reset">Забыл пароль</a>
+					</div>
 				</div>
-				<div>
+				<div class="login-promo-submit">
 					<input type='submit' value='Войти' class="but"></input>
 				</div>
 				<div class="login-forma-button">
 					<a href="Registration">Зарегистрироватся</a>
-					<a href="Reset">Забыл пароль</a>
 				</div>
 			</form>
 		</div>

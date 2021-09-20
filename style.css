@@ -1,5 +1,5 @@
 .login{
-	height:280px;
+	height:300px;
 	width:350px;
 	margin:0 auto;
     color: #333333;
@@ -16,6 +16,10 @@
 	font-family: "Ubuntu", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 24px;
 	
+}
+.login-promo-forma
+{
+position: relative;
 }
 .login-forma-name{
 	position:inherit;
@@ -35,6 +39,16 @@
 }
 a{
 	margin:0 auto;
+}
+.login-promo-submit
+{
+	margin-top: 15px;
+}
+.login-forma-reset
+{
+	font-size: 14px;
+	position: absolute;
+	right:55px;
 }
 body{
 	font-family: "Ubuntu", Helvetica Neue, Helvetica, Arial, sans-serif;
