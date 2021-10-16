@@ -14,3 +14,6 @@ git branch
         git pull origin master --allow-unrelated-histories получить ветку с сервера
         git push origin --delete <branchName> Удалить ветку на сервере
         git reset --hard HEAD^ отменить коммит
+        git init - инициализировать ветку
+        git remote - Управление удаленным репозиториями
+        git remote add <Название подключение> "Адрес подключения"
