@@ -21,6 +21,10 @@
 {
 position: relative;
 }
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 .login-forma-name{
 	position:inherit;
 	padding-top:20px;
