@@ -7,9 +7,13 @@ $link = mysqli_connect('localhost', 'mysql', '','information');
 		WHERE `login` = '".$login."' AND `password`='".$password."'";
 					$result=mysqli_query($link, $sql) or die("Ошибка ".mysqli_error($link));
 					$user=$result->fetch_assoc();
+					var_dump($result);
+					echo "<br/>";
 if(!$user)
 {
-	header("Location:./");
+	echo $sql."<br/>";
+	echo $user['login']." ".$user['password'];
+	//header("Location:./");
 	exit;
 }
 setcookie('user',$user['id_user'],time()+3600,'/');

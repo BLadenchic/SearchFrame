@@ -8,7 +8,7 @@
 </head>
 <body onload="Start();">
 <?php if(isset($_COOKIE['user'])):
-$link = mysqli_connect('localhost', 'root', '','testing');
+$link = mysqli_connect('localhost', 'root', '','information');
 			mysqli_query($link,'SET NAMES utf8');
 			$sql =  'select *
 		from users
@@ -34,7 +34,9 @@ $link = mysqli_connect('localhost', 'root', '','testing');
 </div>
 <?php 
 	if(!isset($_POST['but']))
-	{$sql =  'select * from tests where tests.id_Test="'.$_COOKIE['id_test'].'"';
+	{
+		$link = mysqli_connect('localhost', 'root', '','testing');
+		$sql =  'select * from tests where tests.id_Test="'.$_COOKIE['id_test'].'"';
 			$result=mysqli_query($link, $sql) or die("Ошибка ".mysqli_error($link));
 			$row = $result->fetch_assoc();?>
 			<form action="end.php" method="POST">

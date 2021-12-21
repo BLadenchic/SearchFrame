@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php if(isset($_COOKIE['user'])):
-$link = mysqli_connect('localhost', 'root', '','testing');
+$link = mysqli_connect('localhost', 'root', '','information');
 mysqli_query($link,'SET NAMES utf8');
 $sql =  'select *
 		from users
@@ -36,7 +36,7 @@ $sql =  'select *
 <div class="tests">
 
 	<?php 
-	
+	$link = mysqli_connect('localhost', 'root', '','testing');
 			$sql =  'select * from tests;';
 		$result=mysqli_query($link, $sql) or die("Ошибка ".mysqli_error($link));
 			while(($row = $result->fetch_assoc()) != FALSE)
